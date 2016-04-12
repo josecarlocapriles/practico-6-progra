@@ -1,0 +1,25 @@
+//Calcular la siguiente serie:	S= X/1! - X^2/2! + X^3/3! - ........(+/-)X^n/n!
+
+#include "stdafx.h"
+#include <iostream>
+#include <conio.h>
+#include <Math.h>
+using namespace std;
+void main() {
+double x,r,p;
+int i,s,n,sig;
+cout << "Ingrese la base: ";
+	cin>>x;
+	cout << "Ingrese el exponente: " ;
+	cin>>n;
+	s=1;
+	r=0;
+	sig=1;
+	for(i=1;i<=n;i++){
+		s=s*(i);
+		p=((pow(x,i))/s)*sig;
+		r=r+p;
+		sig=sig*(-1);
+	}
+	cout<< "La serie hasta " << n << " es: " << r;
+	getch();}
