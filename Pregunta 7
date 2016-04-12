@@ -2,7 +2,6 @@
 #include "stdafx.h"
 #include <iostream>
 #include <conio.h>
-#include <Math.h>
 using namespace std;
 void main() {
 int i,s,n;
