@@ -1,0 +1,22 @@
+//Calcular la siguiente serie
+#include "stdafx.h"
+#include <iostream>
+#include <conio.h>
+#include <Math.h>
+using namespace std;
+void main() {
+double x,r,p;
+int i,s,n;
+cout << "Ingrese la base: ";
+	cin>>x;
+	cout << "Ingrese el exponente: " ;
+	cin>>n;
+	s=1;
+	r=0;
+	for(i=1;i<=n;i++){
+		s=s*(i);
+		p=(pow(x,i))/s;
+		r=r+p;
+	}
+	cout<< "La serie hasta " << n << " es: " << r;
+	getch();}
