@@ -1,0 +1,16 @@
+//Calcular el factorial de un número entero N
+#include "stdafx.h"
+#include <iostream>
+#include <conio.h>
+#include <Math.h>
+using namespace std;
+void main() {
+int i,s,n;
+	cout << "Ingrese un numero entero positivo: " ;
+	cin>>n;
+	s=1;
+	for(i=1;i<=n;i++){
+		s=s*(i);
+	}
+	cout<<"Factorial de " << n << " seria: " << s;
+	getch();}
