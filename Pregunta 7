@@ -12,5 +12,5 @@ int i,s,n;
 	for(i=1;i<=n;i++){
 		s=s*(i);
 	}
-	cout<<"Factorial de " << n << " seria: " << s;
+	cout<< n << "! " <<"= " << s;
 	getch();}
