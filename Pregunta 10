@@ -1,0 +1,31 @@
+#include "stdafx.h"
+#include <iostream>
+#include <conio.h>
+#include <Math.h>
+using namespace std;
+void main() {
+	double x,r,p;
+	int i,s,n,sig,k;
+	cout << "Ingrese la base: ";
+	cin>>x;
+	cout << "Ingrese el exponente: " ;
+	cin>>n;
+	s=1;
+	r=0;
+	k=1;
+	sig=1;
+	for(i=1;i<=n;i++){
+		s=s*(i);
+		if (k==0){
+			p=((pow(x,i))/s)*sig*k;
+			r=r+p;
+			sig=sig*(-1);
+			k=k+1;}
+		else{
+			p=((pow(x,i))/s)*sig*k;
+			r=r+p;
+			k=k-1;	
+		}
+	}
+	cout<< "La serie hasta " << n << " es: " << r;
+	getch();}
