@@ -1,0 +1,17 @@
+//Calcular la siguiente suma
+#include "stdafx.h"
+#include <iostream>
+#include <conio.h>
+using namespace std;
+void main() {
+	int i,s,n,sig;
+	cout << "Ingrese un numero entero positivo: " ;
+	cin>>n;
+	s=0;
+	sig=1;
+	for(i=1;i<=n;i++){
+		s=s+(i*sig);
+		sig=sig*(-1);
+	}
+	cout<<"La serie hasta el " << n << " seria: " <<s;
+	getch();}
