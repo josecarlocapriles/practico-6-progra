@@ -1,0 +1,14 @@
+//Suma de los números enteros impares comprendidos entre 1 y N.
+#include "stdafx.h"
+#include <iostream>
+#include <conio.h>
+using namespace std;
+void main() {
+	int i,s,n;
+	cout << "Ingrese un numero entero positivo: " ;
+	cin>>n;
+	s=0;
+	for(i=1;i<=n;i=i+2)
+		s=s+i;
+	cout<<"La suma de los numeros impares del 1 al " << n << " es: " <<s;
+	getch();}
