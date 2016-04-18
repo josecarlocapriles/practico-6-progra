@@ -1,0 +1,27 @@
+
+#include "stdafx.h"
+#include<iostream>
+#include<stdio.h>
+#include <conio.h>
+#include <stdlib.h>
+#define ESPERA 532000000 //ESPERA depende de la velocidad de tu procesador
+using namespace std;
+void main()
+
+{
+	int seg, min, horas, espera;
+	cout<<"Este programa muestra la hora digital"<<endl;
+	for(;;)
+	{
+		horas = 0;
+		for(horas = 0; horas < 24; horas++)
+			for(min = 0; min < 60; min++)
+				for(seg = 0; seg < 60; seg++)
+				{
+					for(espera = 0; espera < ESPERA; espera++);
+					system("cls");
+					cout<< horas<<":"<< min <<":"<< seg;
+				}
+	}
+	getch();
+}
