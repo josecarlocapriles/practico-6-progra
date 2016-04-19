@@ -1,0 +1,30 @@
+#include "stdafx.h"
+#include <iostream>
+#include <conio.h>
+#include <Math.h>
+using namespace std;
+void main() {
+	int n,i,s,r,d;
+	float b;
+	cout<<"Ingrese un Valor: ";
+	do {cin>>n;
+		if (n<0)
+			cout<<"Ingrese un Valor Positivo: ";
+	} while (n<=0);
+	do {cin>>b;
+		if (b<2)
+			cout<<"Ingrese un Valor Positivo: ";
+	} while (b<=1);
+	i=0;
+	s=0;
+	while (n>0) {
+		r=n%10;
+		n=n/10;
+		d=r*pow(b,i);
+		i++;
+		s=s+d;
+	}
+	cout<<endl;
+	cout<<"El numero en base 10 es: "<< s;
+	getch();
+}
