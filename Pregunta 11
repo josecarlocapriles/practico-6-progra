@@ -6,9 +6,9 @@ using namespace std;
 int main(int argc, char*argv[])
 
 {       int a, b, x, z, y=1, i=2;
-            cout<<"ingrese primer numero: \n";
+            cout<<"ingrese primer numero: "<<endl;
             cin>>a;
-            cout<<"ingrese segundo numero: \n";
+            cout<<"ingrese segundo numero: "<<endl;
             cin>>b;
             if (a<b){x=a; z=b;} else {x=b; z=a;}
             do {
@@ -19,6 +19,6 @@ int main(int argc, char*argv[])
             }
             else i++;
             }while(i<=x);
-			cout<<"el MCD es "<<y<<"\n";
+			cout<<"el MCD es "<< y << endl;
  getch();
 }
