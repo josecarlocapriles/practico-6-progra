@@ -1,7 +1,6 @@
 
 #include "stdafx.h"
-#include<iostream>
-#include<stdio.h>
+#include <iostream>
 #include <conio.h>
 #include <stdlib.h>
 #define ESPERA 532000000 //ESPERA depende de la velocidad de tu procesador
